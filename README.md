@@ -83,7 +83,20 @@ chmod +x install.sh
 ## 🧹 Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ghepardoman/NI-Multisim-14-for-Linux-and-MacOS/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ghepardoman/NI-Multisim-14-for-Linux-and-MacOS/main/uninstall.sh -o uninstall.sh && bash uninstall.sh
+```
+
+Or more explicitly,
+
+```bash
+# 1. Download the script
+curl -fsSL https://raw.githubusercontent.com/ghepardoman/NI-Multisim-14-for-Linux-and-MacOS/main/uninstall.sh -o uninstall.sh
+
+# 2. Make it executable (optional)
+chmod +x uninstall.sh
+
+# 3. Run it
+./uninstall.sh
 ```
 
 ---
